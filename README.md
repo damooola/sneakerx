@@ -24,16 +24,18 @@ Welcome to the New Balance Sneaker Shop App! This app allows users to browse and
 1. **Clone the repository**:
    ```sh
    git clone https://github.com/damooola/sneakerx.git
-   cd sneakerx
+   cd sneakerx 
+
 2. **Install dependencies**
    ```sh
-    $ flutter pub get
-3.  **Run the app**
+    $ flutter pub get 
+
+3. **Run the app**
    ```sh
     $ flutter run
   
     
-##  Limitations
+## Limitations
 
 1.  User Authentication: Secure login and registration for users is not   yet implemented.
 2.  Order History: Viewing past orders and tracking current orders is not yet implemented.    
