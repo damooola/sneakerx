@@ -31,6 +31,7 @@ Welcome to the New Balance Sneaker Shop App! This app allows users to browse and
 3.  **Run the app**
    ```sh
     $ flutter run
+  
     
 ##  Limitations
 
