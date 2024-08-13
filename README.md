@@ -1,6 +1,6 @@
 # SneakerX
 
-Welcome to the New Balance Sneaker Shop App! This app allows users to browse and purchase a variety of New Balance sneakers, including popular models like the 990v3, 574, 857, 993, 1906R, 2002R, M990, and 2002R Black.
+Welcome to the New Balance Sneaker Shop App! This app allows users to browse and purchase a variety of New Balance sneakers.
 
 ## Features
 
@@ -26,10 +26,21 @@ Welcome to the New Balance Sneaker Shop App! This app allows users to browse and
    git clone https://github.com/damooola/sneakerx.git
    cd sneakerx
 2. **Install dependencies**
+   ```sh
     $ flutter pub get
 3.  **Run the app**
+   ```sh
     $ flutter run
     
 ##  Limitations
+
 1.  User Authentication: Secure login and registration for users is not   yet implemented.
 2.  Order History: Viewing past orders and tracking current orders is not yet implemented.    
+
+## Contribution
+
+Contributions are welcome! Please fork the repository and submit a pull request with your changes.
+
+## Contact
+
+For any questions or feedback, please contact me at damolanelson@gmail.com.
