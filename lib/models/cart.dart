@@ -4,7 +4,7 @@ import 'shoe.dart';
 
 class Cart extends ChangeNotifier {
   // list of shoes for sale
- static List <Shoe> shoeShop = [
+   List<Shoe> shoeShop = [
     Shoe(
         name: "New Balance 574",
         price: "89.99",
@@ -36,19 +36,19 @@ class Cart extends ChangeNotifier {
         description:
             "A high-performance sneaker featuring ACTEVA LITE cushioning and a stylish, modern design"),
     Shoe(
-        name: "2002R Black",
+        name: "New Balance 2002RB",
         price: "139.99",
         imagePath: "lib/images/newb_2002bl.png",
         description:
-            "A sleek, all-black version of the 2002R, combining style and comfort with premium materials"),
+            "A sleek, black version of the 2002R, combining style and comfort with premium materials"),
     Shoe(
-        name: "2002R",
+        name: "New Balance 2002R",
         price: "139.99",
         imagePath: "lib/images/newb_2002r.png",
         description:
             "A retro-inspired running shoe with premium materials and advanced cushioning for superior comfort"),
     Shoe(
-        name: "M990",
+        name: "New Balance M990",
         price: "189.99",
         imagePath: "lib/images/newb_m990.png",
         description:

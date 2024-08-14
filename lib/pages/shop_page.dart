@@ -17,28 +17,28 @@ class _ShopPageState extends State<ShopPage> {
     Provider.of<Cart>(context, listen: false).addItemtoCart(shoe);
 
     showDialog(
-        context: context,
-        builder: (context) => AlertDialog(
-              title: Text("Successfully added"),
-              content: Text("Check your cart"),
-            ));
+      context: context,
+      builder: (context) => const AlertDialog(
+        title: Text("Successfully added"),
+        content: Text("Check your cart"),
+      ),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
     return Consumer<Cart>(
       builder: (context, value, child) => Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           // search bar
           Container(
-            margin: const EdgeInsets.symmetric(horizontal: 30),
-            padding:
-                const EdgeInsets.only(left: 20, top: 8, right: 20, bottom: 5),
+            margin: const EdgeInsets.symmetric(horizontal: 25),
+            padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
-                color: Colors.grey[100],
-                shape: BoxShape.rectangle,
-                borderRadius: BorderRadius.circular(8)),
+              color: Colors.grey[100],
+              borderRadius: BorderRadius.circular(8),
+            ),
             child: const TextField(
               decoration: InputDecoration(
                   hintText: "Search",
@@ -49,10 +49,9 @@ class _ShopPageState extends State<ShopPage> {
                   )),
             ),
           ),
-          const SizedBox(height: 35),
           //text
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 71),
+            padding: const EdgeInsets.symmetric(vertical: 25),
             child: Text(
               'because shoes that fit better, perform better...',
               style: TextStyle(
@@ -64,7 +63,7 @@ class _ShopPageState extends State<ShopPage> {
 
           //hot picks text
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 30),
+            padding: const EdgeInsets.symmetric(horizontal: 25),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -84,6 +83,7 @@ class _ShopPageState extends State<ShopPage> {
               ],
             ),
           ),
+          const SizedBox(height: 10),
           //list of shoes
           Expanded(
             child: ListView.builder(
@@ -94,7 +94,7 @@ class _ShopPageState extends State<ShopPage> {
                   onTap: () => addShoeToCart(shoe),
                 );
               },
-              itemCount: Cart.shoeShop.length,
+              itemCount: value.getShoeList().length,
               scrollDirection: Axis.horizontal,
             ),
           ),

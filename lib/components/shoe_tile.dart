@@ -10,10 +10,10 @@ class ShoeTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(left: 30),
-      width: 280,
+      margin: const EdgeInsets.only(left: 25),
+      width: 300,
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Colors.grey[100],
         borderRadius: BorderRadius.circular(12),
       ),
       child: Column(
@@ -21,20 +21,28 @@ class ShoeTile extends StatelessWidget {
         children: [
           //image
           Padding(
-            padding: const EdgeInsets.all(20),
-            child: Image.asset(shoe.imagePath),
+            padding: const EdgeInsets.symmetric(horizontal: 15),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(12),
+              child: Image.asset(
+                shoe.imagePath,
+              ),
+            ),
           ),
 
           //description
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 25.0),
+            padding: const EdgeInsets.symmetric(horizontal: 15),
             child: Text(
               shoe.description,
-              style: TextStyle(color: Colors.grey[600]),
+              style: TextStyle(
+                color: Colors.grey[600],
+              ),
             ),
           ),
+
           Padding(
-            padding: const EdgeInsets.only(left: 15),
+            padding: const EdgeInsets.only(left: 5),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -48,21 +56,20 @@ class ShoeTile extends StatelessWidget {
                       style: const TextStyle(
                           fontSize: 20, fontWeight: FontWeight.bold),
                     ),
-                    const SizedBox(
-                      height: 5,
-                    ),
+
+                    const SizedBox(height: 5),
                     //price
                     Text(
                       "\$${shoe.price}",
-                      style: TextStyle(color: Colors.grey[600]),
+                      style: const TextStyle(color: Colors.grey),
                     ),
                   ],
                 ),
                 // plus button
                 GestureDetector(
-                  onTap: () => onTap,
+                  onTap: onTap,
                   child: Container(
-                      padding: const EdgeInsets.all(20),
+                      padding: const EdgeInsets.all(16),
                       decoration: const BoxDecoration(
                           color: Colors.black,
                           borderRadius: BorderRadius.only(

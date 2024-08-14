@@ -86,6 +86,15 @@ class _HomePageState extends State<HomePage> {
                   child: ListTile(
                     textColor: Colors.white,
                     iconColor: Colors.white,
+                    leading: Icon((Icons.person)),
+                    title: Text("Profile"),
+                  ),
+                ),
+                const Padding(
+                  padding: EdgeInsets.only(top: 25, left: 25),
+                  child: ListTile(
+                    textColor: Colors.white,
+                    iconColor: Colors.white,
                     leading: Icon((Icons.settings)),
                     title: Text("Settings"),
                   ),
