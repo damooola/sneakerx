@@ -6,7 +6,7 @@ Welcome to the New Balance Sneaker Shop App! This app allows users to browse and
 
 - **Browse Sneakers**: View descriptions, prices, and images of various New Balance sneakers.
 - **Search Functionality**: Easily find your favorite sneakers using the search feature.
-- **Shopping Cart**: Add sneakers to your cart and proceed to checkout.
+- **Shopping Cart**: Add and remove sneakers to your cart and proceed to checkout.
 
 ## Sneaker Models
 
