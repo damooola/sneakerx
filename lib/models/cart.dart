@@ -4,25 +4,13 @@ import 'shoe.dart';
 
 class Cart extends ChangeNotifier {
   // list of shoes for sale
-   List<Shoe> shoeShop = [
+  List<Shoe> shoeShop = [
     Shoe(
         name: "New Balance 574",
         price: "89.99",
         imagePath: "lib/images/newb_574.png",
         description:
             "A versatile, classic sneaker known for its rugged durability and comfortable fit"),
-    Shoe(
-        name: "New Balance 857",
-        price: "179.99",
-        imagePath: "lib/images/newb_857.png",
-        description:
-            "A stability-focused cross-trainer with ROLLBAR technology for enhanced support and control"),
-    Shoe(
-        name: "New Balance 990v3",
-        price: "199.99",
-        imagePath: "lib/images/newb_990v3.png",
-        description:
-            "A premium running shoe with ENCAP midsole cushioning for all-day support and comfort"),
     Shoe(
         name: "New Balance 993",
         price: "219.99",
@@ -35,12 +23,6 @@ class Cart extends ChangeNotifier {
         imagePath: "lib/images/newb_1906r.png",
         description:
             "A high-performance sneaker featuring ACTEVA LITE cushioning and a stylish, modern design"),
-    Shoe(
-        name: "New Balance 2002RB",
-        price: "139.99",
-        imagePath: "lib/images/newb_2002bl.png",
-        description:
-            "A sleek, black version of the 2002R, combining style and comfort with premium materials"),
     Shoe(
         name: "New Balance 2002R",
         price: "139.99",

@@ -14,6 +14,7 @@ class CartPage extends StatelessWidget {
       builder: (BuildContext context, Cart value, Widget? child) => Padding(
         padding: const EdgeInsets.symmetric(horizontal: 25),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             //heading
             const Text(
@@ -22,10 +23,13 @@ class CartPage extends StatelessWidget {
             ),
             const SizedBox(height: 10),
             Expanded(
-              child: ListView.builder(itemBuilder: (context, index) {
-                Shoe individialshoe = value.getUserCart()[index];
-                return CartItem();
-              }),
+              child: ListView.builder(
+                itemBuilder: (context, index) {
+                  Shoe individialshoe = value.getUserCart()[index];
+                  return CartItem(shoe: individialshoe);
+                },
+                itemCount: value.getUserCart().length,
+              ),
             )
           ],
         ),
